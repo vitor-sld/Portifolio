@@ -1,0 +1,37 @@
+@import "./_variaveis";
+
+.about-me {
+    @include telaDividida;
+
+
+    .about-me__container {
+        padding: 0 100px;
+        display: flex;
+        justify-content: space-between;
+
+
+        .about-me__imgPart {
+            .about-me-img {
+                width: 500px;
+                height: 600px;
+                object-fit: cover;
+                filter: grayscale(100%);
+                border: 10px white solid;
+                border-radius: 5px;
+            }
+        }
+
+        .about-me__description {
+            width: 40%;
+            margin-left: 40px;
+
+            h1 {
+                text-align: start;
+                margin-bottom: 20px;
+                color: rgb(253, 204, 140);
+
+            }
+        }
+
+    }
+}

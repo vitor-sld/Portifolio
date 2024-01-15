@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background-color: black;
+  border: 1px solid white;
+  transition: all 0.5s ease-in-out;
+}
+
+a {
+  transition: 0.5 left;
+  position: relative;
+  text-decoration: none;
+}
+
+nav a:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  background-color: rgb(253, 204, 140);
+  height: 5px;
+  top: 30px;
+  left: 0px;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+nav a#linkWhatsapp::after {
+  transform: scaleX(0);
+}
+
+nav a:hover:after {
+  transform: scaleX(1);
+}
+
+a:hover {
+  color: rgb(253, 204, 140);
+  transform: scale(1.1);
+}
+
+h1,
+.h1 {
+  text-align: justify;
+  font-size: 80px;
+}
+
+h2,
+.h2 {
+  font-size: 60px;
+  color: rgb(253, 204, 140);
+}
+
+h5,
+.h5 {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: rgb(141, 141, 141);
+}
+
+.h6 {
+  font-size: 25px;
+  color: rgb(253, 204, 140);
+}
+
+/*# sourceMappingURL=estiloGeral.css.map */

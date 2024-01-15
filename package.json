@@ -1,0 +1,23 @@
+{
+  "name": "portifolio",
+  "version": "1.0.0",
+  "description": "portifolio de vitor augusto",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/estilo:dist",
+    "sass-watch": "sass --watch src/estilo:dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portifolio",
+    "desenvolvedor",
+    "front-end",
+    "web",
+    "developer"
+  ],
+  "author": "Vitor Augusto",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.6"
+  }
+}

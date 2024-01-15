@@ -1,0 +1,60 @@
+@keyframes arrowDown {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 100px 100px;
+  border: 1px solid white;
+}
+.hero__text-box {
+  width: 40vw;
+  margin: auto;
+}
+.hero__text-box__titulos {
+  margin: 20px 0;
+}
+.hero__text-box__links a ion-icon {
+  font-size: 40px;
+  width: 40px;
+  color: white;
+  margin: 20px 10px 30px;
+}
+.hero__text-box__resume-about-me .p-resume-about-me {
+  font-size: 24px;
+  line-height: 140%;
+  color: rgb(141, 141, 141);
+}
+
+.hero__img-box {
+  width: 100%;
+  margin: auto;
+  max-height: 90vh;
+  max-width: 50vh;
+}
+.hero__img-box__container img {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.sectionArrow {
+  width: 100vw;
+  text-align: center;
+}
+.sectionArrow ion-icon {
+  font-size: 2em;
+  margin: 40px 0;
+  animation: arrowDown 4s infinite;
+}
+
+/*# sourceMappingURL=sectionHero.css.map */

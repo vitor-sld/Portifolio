@@ -1,0 +1,11 @@
+.arrowSection {
+  height: 100px;
+  overflow: hidden;
+  border: 1px solid white;
+}
+.arrowSection img {
+  margin-top: -20px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=arrowSection.css.map */

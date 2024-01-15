@@ -1,0 +1,77 @@
+.header {
+    max-width: 100vw;
+    border: 1px white solid;
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        // background-color: aqua;
+
+
+        &__nav-container {
+            border: 1px white solid;
+
+            &__logo {
+                height: 80px;
+                width: 80px;
+
+                .img-logo {
+                    display: block;
+                    width: 80px;
+                    padding: 10px;
+                }
+
+            }
+
+            &__links-container {
+                height: 100%;
+                max-width: 50vw;
+                display: flex;
+                justify-content: space-between;
+
+                .nav-link {
+                    display: inline-block;
+                    margin: auto 25px;
+                    min-width: 70px;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    font-family: 'Poppins', sans-serif;
+                    text-align: center;
+
+                    ion-icon {
+                        align-self: center;
+                        font-size: 30px;
+                        margin: 5px auto;
+                        max-width: 40px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+// <header class="header">
+//         <nav class="nav">
+
+//             <div class="nav__nav-container">
+//                 <div class="nav__nav-container__logo">
+//                     <a href="hero" role="link" title="logo do site, ao clicar levará ao topo da página"><img
+//                             src="src/images/LogoSite (2).png" alt="logo do Portifólio de Vitor Augusto" role="img"
+//                             class="img-logo"></a>
+//                 </div>
+//             </div>
+
+//             <div class="nav__nav-container">
+//                 <div class="nav__nav-container__links-container">
+//                     <a href="hero" role="link" title="topo do site">início</a>
+//                     <a href="#" role="link" title="seção de habilidades">habilidades</a>
+//                     <a href="#" role="link" title="seção sobre mim">sobre mim</a>
+//                     <a href="#" role="link" title="seção contatos"> contatos</a>
+//                     <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+//                 </div>
+//             </div>
+//         </nav>
+//     </header>
