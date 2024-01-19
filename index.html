@@ -7,7 +7,9 @@
     <link rel="shortcut icon" type="imagex/png" href="./src/images/LogoSite1.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nobile:wght@400;700&family=Playfair+Display&family=Volkhov:wght@400;700&display=swap"
+        rel="stylesheet">
     <title>Portifólio Vitor Augusto</title>
     <link rel="stylesheet" href="dist/estiloGeral.css">
     <link rel="stylesheet" href="dist/header.css">
@@ -68,7 +70,10 @@
                 <div class="hero__text-box__links">
                     <a href="#"><ion-icon name="logo-github"></ion-icon></a>
                     <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
-                    <a href=""><ion-icon name="mail-outline"></ion-icon></a>
+                    <a href=""><ion-icon name="mail-outline" alt=""></ion-icon></a>
+                    <a href="./src/Portifólio.pdf" download=""><img src="./src/images/icons/portfolio.png"
+                            alt="portfolio" title="Baixar portfólio" srcset=""></a>
+
                 </div>
             </div>
         </div>
@@ -88,27 +93,76 @@
 
     <section class="skills" id="habilidades">
 
-        <div class="skills__itens__habilidades">
-            <h2 class="h1">Habilidades</h2>
-            <div class="skills__itens__habilidades__container">
+        <div class="skills__itens__habilidades__container">
 
-                <div class="habilidades-column-left">
+            <div class="habilidades-column-left">
+                <h2 class="h1">Soft Skills </h2>
+                <div class="container">
+
+                    <div class="collapseContainer" id="comunicacao">
+                        <button class="collapse-Soft-Skills">
+                            <p>Comunicação efetiva em equipe:</p> <span>+</span>
+                        </button>
+                        <p class="textCollapse">Exemplos: Participação na criação de produtos na empresa Capim Limão
+                            Cosméticos,
+                            colaboração em projetos relevantes, supervisão da equipe de marketing na Capim Limão
+                            Cosméticos, e participação na criação de roteiro na sessão de fotos da artista e dançarina
+                            Sheila Mello.</p>
+                    </div>
+
+                    <div class="collapseContainer" id="resolucao">
+                        <button class="collapse-Soft-Skills">
+                            <p>Resolução de problemas:</p> <span>+</span>
+                        </button>
+                        <p class="textCollapse">Exemplos: Atuação ativa na resolução de problemas na BMC Comercial, e
+                            criação de soluções eficientes no desenvolvimento de sites responsivos.</p>
+                    </div>
+
+                    <div class="collapseContainer" id="trabalhoEquipe">
+                        <button class="collapse-Soft-Skills">
+                            <p>Trabalho em equipe sob pressão:</p> <span>+</span>
+                        </button>
+                        <p class="textCollapse">Exemplos: Participação na sessão fotográfica da Sheila Mello,
+                            comunicação respeitosa em equipe sob pressão, e apresentação do projeto da porta automática
+                            na Feira Tecnológica da ETEC Zona Leste.</p>
+                    </div>
+
+                    <div class="collapseContainer" id="gestao">
+                        <button class="collapse-Soft-Skills">
+                            <p>Gestão do tempo e comprometimento:</p> <span>+</span>
+                        </button>
+                        <p class="textCollapse">Exemplos: Busca por oportunidades desafiadoras, movido por aprendizado
+                            contínuo, e participação em atividades extracurriculares como o curso WebMaster Front-End,
+                            Figma, Scrum e Planejamento Pessoal.</p>
+                    </div>
+
+                    <div class="collapseContainer" id="lideranca">
+                        <button class="collapse-Soft-Skills">
+                            <p>Liderança e gestão de equipe:</p> <span>+</span>
+                        </button>
+                        <p class="textCollapse">Exemplos: Gestão e liderança de equipe no projeto de E-commerce da
+                            Cafeteria Rocket Coffee, e organização de setor utilizando conhecimentos em SCRUM e Kanban
+                            na BMC Comercial.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lineCenter"></div>
+
+            <div class="habilidades-column-right">
+                <h2 class="h1">Habilidades</h2>
+                <div class="container">
                     <h5><img src="src/images/icons/html.png" alt="imagem da linguagem de marcação HTML">
-                        <p class="h5">HTML</p>
+                        <p class="h5 bold">HTML</p>
                     </h5>
                     <h5><img src="src/images/icons/css.png" alt="logo da folha de estilo CSS">
                         <p class="h5">CSS</p>
                     </h5>
-                    <h5><img src="src/images/icons/sass.png" alt="logo do SASS">
-                        <p class="h5">SASS & LESS</p>
-                    </h5>
-
-
-                </div>
-
-                <div class="habilidades-column-center">
                     <h5><img src="src/images/icons/javascript.png" alt="logo do software javascript">
                         <p class="h5">JAVASCRIPT</p>
+                    </h5>
+                    <h5><img src="src/images/icons/sass.png" alt="logo do SASS">
+                        <p class="h5">SASS & LESS</p>
                     </h5>
                     <h5> <img src="src/images/icons/typescript.png" width="40px" height="40px" alt="logo do typescript">
                         <p class="h5">TYPESCRIPT</p>
@@ -116,27 +170,20 @@
                     <h5><img src="src/images/icons/vue.js.png" alt="logo do VUE.JS">
                         <p class="h5">VUE.JS</p>
                     </h5>
-                </div>
-
-
-
-                <div class="habilidades-column-right">
                     <h5><img src="src/images/icons/figma.png" alt="logo do software FIGMA">
                         <p class="h5">FIGMA</p>
                     </h5>
-
                     <h5><img src="src/images/icons/clearCode.png" alt="simbolo de fechamento de comando em html">
                         <p class="h5">CÓDIGO LIMPO</p>
                     </h5>
-
-                    <h5><img src="src/images/icons/corelDraw.jpg" alt="Logo do software Corel Draw">
+                    <h5><img src="src/images/icons/corelDraw.jpg" width="30" height="30"
+                            alt="Logo do software Corel Draw">
                         <p class="h5">COREL DRAW</p>
-                    </h5>
-
+                        <h5><img src="src/images/icons/scrum.png" width="30" height="30"
+                                alt="Logo do software Corel Draw">
+                            <p class="h5">SCRUM</p>
                 </div>
             </div>
-        </div>
-        </div>
         </div>
     </section>
 
@@ -152,10 +199,7 @@
             </div>
 
             <div class="about-me__description">
-                <h1> Um pouco sobre mim...</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt totam praesentium sed obcaecati ea,
-                    eaque, quam deserunt excepturi asperiores vitae optio velit quia repudiandae rem eum est maiores officia
-                    necessitatibus.</p>
+
                 <h6 class="h6">Hobbies</h6>
                 <span></span>
             </div>
@@ -163,7 +207,7 @@
         </div>
 
     </section>
-
+    <script src="dist/scripts/skills.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

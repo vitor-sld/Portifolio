@@ -1,22 +1,13 @@
 @import "./_variaveis";
 
-@keyframes arrowDown {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.3);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-
 .hero {
     @include telaDividida;
+    background-image: url("../images/retrowave.png") !important;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    
+    
     border: 1px solid white;
 
     &__text-box {
@@ -29,7 +20,7 @@
 
         &__links {
             a {
-                ion-icon {
+                ion-icon, img {
                     font-size: 40px;
                     width: 40px;
                     color: white;
@@ -70,16 +61,6 @@
     }
 }
 
-.sectionArrow {
-    width: 100vw;
-    text-align: center;
-
-    ion-icon {
-        font-size: 2em;
-        margin: 40px 0;
-        animation: arrowDown 4s infinite;
-    }
-}
 
 
 // <section id="hero">

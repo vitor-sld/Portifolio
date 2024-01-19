@@ -1,56 +1,120 @@
 .skills {
-  padding: 20px 0;
+  padding: 0px 0;
 }
-.skills__itens__habilidades {
-  width: 100vw;
-  padding: 40px;
-}
-.skills__itens__habilidades h2 {
-  text-align: center !important;
-  margin-bottom: 20px;
-}
-.skills__itens__habilidades .skills__itens__habilidades__container {
+.skills__itens__habilidades__container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 1000px;
+  grid-template-columns: 1fr 3px 1fr;
   margin: auto;
   padding: 0 100px;
 }
-.skills__itens__habilidades .skills__itens__habilidades__container .habilidades-column-left,
-.skills__itens__habilidades .skills__itens__habilidades__container .habilidades-column-right,
-.skills__itens__habilidades .skills__itens__habilidades__container .habilidades-column-center {
-  margin: auto;
-}
-.skills__itens__habilidades .skills__itens__habilidades__container .habilidades-column-left h5,
-.skills__itens__habilidades .skills__itens__habilidades__container .habilidades-column-right h5,
-.skills__itens__habilidades .skills__itens__habilidades__container .habilidades-column-center h5 {
-  border: 1px solid white;
-  border-radius: 3px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  margin: 70px auto;
+.skills__itens__habilidades__container .habilidades-column-left {
+  padding: 100px 0;
   transition: 0.5s;
-  padding: 10px 20px;
 }
-.skills__itens__habilidades .skills__itens__habilidades__container .habilidades-column-left h5 :last-child,
-.skills__itens__habilidades .skills__itens__habilidades__container .habilidades-column-right h5 :last-child,
-.skills__itens__habilidades .skills__itens__habilidades__container .habilidades-column-center h5 :last-child {
+.skills__itens__habilidades__container .habilidades-column-left .h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.skills__itens__habilidades__container .habilidades-column-left .container {
+  padding: 0 100px 0 0;
+}
+.skills__itens__habilidades__container .habilidades-column-left .container button {
+  outline: none;
+  border: none;
+}
+.skills__itens__habilidades__container .habilidades-column-left .container .collapseContainer {
+  width: 100%;
+  height: 75px;
+  background-color: black;
+  border-bottom: 1px solid white;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.skills__itens__habilidades__container .habilidades-column-left .container .collapseContainer .collapse-Soft-Skills {
+  width: 100%;
+  height: 70px;
+  border-radius: 15px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 1s;
+  margin-bottom: 5px;
+}
+.skills__itens__habilidades__container .habilidades-column-left .container .collapseContainer .collapse-Soft-Skills p {
+  font-size: 30px;
+  padding: 0 20px;
+}
+.skills__itens__habilidades__container .habilidades-column-left .container .collapseContainer .collapse-Soft-Skills span {
+  font-size: 30px;
+  padding: 0 20px;
+  transition: 1s;
+}
+.skills__itens__habilidades__container .habilidades-column-left .container .collapseContainer .textCollapse {
+  padding: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  color: beige;
+  font-family: sans-serif;
+  line-height: 30px;
+}
+.skills__itens__habilidades__container .lineCenter {
+  height: 100%;
+  width: 2px;
+  background-color: aliceblue;
+}
+.skills__itens__habilidades__container .habilidades-column-right {
+  padding: 100px 0;
+  transition: 1s;
+}
+.skills__itens__habilidades__container .habilidades-column-right .h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.skills__itens__habilidades__container .habilidades-column-right .container {
+  margin: auto;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 30px 50px;
+}
+.skills__itens__habilidades__container .habilidades-column-right .container h5 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-gap: 40px;
+  align-items: center;
+  margin: 0px auto;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 50px;
+  text-align: start;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.skills__itens__habilidades__container .habilidades-column-right .container h5 :last-child {
   margin-bottom: 0;
 }
-.skills__itens__habilidades .skills__itens__habilidades__container .habilidades-column-left h5 img,
-.skills__itens__habilidades .skills__itens__habilidades__container .habilidades-column-right h5 img,
-.skills__itens__habilidades .skills__itens__habilidades__container .habilidades-column-center h5 img {
-  width: 60px;
-  height: 60px;
-  margin-right: 20px;
+.skills__itens__habilidades__container .habilidades-column-right .container h5 :last-child p {
+  margin-left: 10px;
+  padding: 0px 10px;
+  font-style: bold;
+  color: #000;
+  font-weight: 800 !important;
+  font-size: 20px;
+  transform: 1s;
 }
-.skills__itens__habilidades .skills__itens__habilidades__container .habilidades-column-left h5:hover,
-.skills__itens__habilidades .skills__itens__habilidades__container .habilidades-column-right h5:hover,
-.skills__itens__habilidades .skills__itens__habilidades__container .habilidades-column-center h5:hover {
+.skills__itens__habilidades__container .habilidades-column-right .container h5 :last-child img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.skills__itens__habilidades__container .habilidades-column-right .container h5:hover {
   transform: scale(1.1);
   border-color: rgb(253, 204, 140);
-  font-weight: 800;
+}
+.skills__itens__habilidades__container .habilidades-column-right .container h5:hover p {
+  color: rgb(253, 204, 140);
 }
 
 /*# sourceMappingURL=skills.css.map */

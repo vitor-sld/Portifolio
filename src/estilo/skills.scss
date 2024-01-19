@@ -3,54 +3,210 @@
 
 
 .skills {
-    padding: 20px 0;
-    &__itens__habilidades {
-        width: 100vw;
-        padding: 40px;
-        h2 {
-            text-align: center !important;
-            margin-bottom: 20px;
-        }
+    padding: 0px 0;
 
-        .skills__itens__habilidades__container {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            width: 1000px;
-            margin: auto;
-            padding: 0 100px ;
+    &__itens__habilidades__container {
+        display: grid;
+        grid-template-columns: 1fr 3px 1fr;
+        margin: auto;
+        padding: 0 100px;
 
-            .habilidades-column-left,
-            .habilidades-column-right,
-            .habilidades-column-center {
-                margin: auto;
 
-                h5 {
-                    
-                    border: 1px solid white;
-                    border-radius: 3px;
-                    text-align: center;
-                    display: flex;
-                    align-items: center;
-                    margin: 70px auto;
-                    transition: .5s;
-                    padding: 10px 20px;
-                    :last-child{
-                        margin-bottom: 0;
+        .habilidades-column-left {
+            padding: 100px 0;
+            transition: .5s;
+
+            .h1 {
+                text-align: center;
+                margin-bottom: 50px;
+            }
+
+            .container {
+                padding: 0 100px 0 0;
+
+                button{
+                    outline: none ;
+                    border: none ;
+                }
+
+                .collapseContainer {
+                    width: 100%;
+                    height: 75px;
+                    background-color: black;
+                    border-bottom: 1px solid white;
+                    overflow: hidden;
+                    transition: all .5s ease-in-out ;
+
+                    .collapse-Soft-Skills {
+                        width: 100%;
+                        height: 70px;
+                        border-radius: 15px;
+                        background-color: black;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        transition: 1s;
+                        margin-bottom: 5px;
+
+
+
+                        p {
+                            font-size: 30px;
+                            padding: 0 20px;
+                            
+                        }
+
+                        span {
+                            font-size: 30px;
+                            padding: 0 20px;
+                            // transform: rotate(45deg);
+                            transition: 1s;
+                        }
                     }
-                    
 
-                    img {
-                        width: 60px;
-                        height: 60px;
-                        margin-right: 20px;
+                    .textCollapse {
+                        padding: 30px;
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: beige;
+                        font-family: sans-serif;
+                        line-height: 30px;
                     }
                 }
+            }
+
+
+        }
+
+        .lineCenter {
+            height: 100%;
+            width: 2px;
+            background-color: aliceblue;
+        }
+
+        .habilidades-column-right {
+            padding: 100px 0;
+            transition: 1s;
+
+
+            .h1 {
+                text-align: center;
+                margin-bottom: 50px;
+            }
+
+            .container {
+                margin: auto;
+                width: 60%;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-gap: 30px 50px;
+
+
+                h5 {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 30px 1fr;
+                    grid-gap: 40px;
+                    align-items: center;
+                    margin: 0px auto;
+                    padding: 10px 20px;
+                    
+
+                    border: 1px solid white;
+                    border-radius: 50px;
+
+                    text-align: start;
+                    font-weight: bold;
+                    transition: .5s;
+
+                    :last-child {
+                        margin-bottom: 0;
+
+                        p {
+                            margin-left: 10px;
+                            padding: 0px 10px;
+                            font-style: bold;
+                            color: #000;
+                            font-weight: 800 !important;
+                            font-size: 20px;
+                            transform: 1s;
+                        }
+
+                        img {
+                            display: block;
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+
                 h5:hover {
                     transform: scale(1.1);
-                    border-color: $variaveis ;
-                    font-weight: 800;
+                    border-color: $variaveis;
+
+                    p {
+                        color: $variaveis;
+                    }
                 }
             }
         }
+
+
     }
 }
+
+
+// @import 'variaveis';
+
+
+
+// .skills {
+//     padding: 20px 0;
+//     &__itens__habilidades {
+//         width: 100vw;
+//         padding: 40px;
+//         h2 {
+//             text-align: center !important;
+//             margin-bottom: 20px;
+//         }
+
+//         .skills__itens__habilidades__container {
+//             display: flex;
+//             width: 1000px;
+//             margin: auto;
+//             padding: 0 100px ;
+
+//             .habilidades-column-left,
+//             .habilidades-column-right{
+//                 margin: auto;
+
+//                 h5 {
+//                     border: 1px solid white;
+//                     border-radius: 50px;
+//                     text-align: center;
+//                     display: flex;
+//                     align-items: center;
+//                     margin: 30px auto;
+//                     transition: .5s;
+//                     padding: 10px 20px;
+//                     font-weight: bold;
+//                     :last-child{
+//                         margin-bottom: 0;
+//                     }
+
+
+//                     img {
+//                         width: 30px;
+//                         height: 30px;
+//                         margin-right: 20px;
+//                     }
+//                 }
+//                 h5:hover {
+//                     transform: scale(1.1);
+//                     border-color: $variaveis ;
+//                     font-weight: 800;
+//                 }
+//             }
+//         }
+//     }
+// }

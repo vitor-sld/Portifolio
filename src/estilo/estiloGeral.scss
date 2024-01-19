@@ -1,3 +1,5 @@
+@import 'variaveis';
+
 * {
     padding: 0;
     margin: 0;
@@ -15,6 +17,20 @@ a {
     transition: .5 left;
     position: relative;
     text-decoration: none;
+}
+p{
+    font-family: $paragraphFont;
+}
+.bold{
+    
+}
+
+h1{
+    font-family: $title;
+}
+
+h2,h3,h4,h5,h6{
+    font-family: $subtitle;
 }
 
 nav a:after {
@@ -57,10 +73,8 @@ h2,
 
 h5,
 .h5 {
+    font-weight: 800;
     font-size: 18px;
-    font-family: sans-serif;
-    font-weight: 500;
-    color: rgb(141, 141, 141);
 }
 
 .h6 {
@@ -68,3 +82,4 @@ h5,
     color: rgb(253, 204, 140);
 
 }
+
