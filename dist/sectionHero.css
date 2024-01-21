@@ -1,12 +1,27 @@
+@keyframes circleAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes upDownAnimation {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -100px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 100px 100px 100px;
-  background-image: url("a.png") !important;
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
   border: 1px solid white;
 }
 .hero__text-box {
@@ -16,7 +31,8 @@
 .hero__text-box__titulos {
   margin: 20px 0;
 }
-.hero__text-box__links a ion-icon, .hero__text-box__links a img {
+.hero__text-box__links a ion-icon,
+.hero__text-box__links a img {
   font-size: 40px;
   width: 40px;
   color: white;
@@ -25,19 +41,57 @@
 .hero__text-box__resume-about-me .p-resume-about-me {
   font-size: 24px;
   line-height: 140%;
-  color: rgb(141, 141, 141);
+  color: white;
 }
 
 .hero__img-box {
-  width: 100%;
+  height: 70vh;
+  width: 50%;
   margin: auto;
   max-height: 90vh;
   max-width: 50vh;
+  position: relative;
 }
-.hero__img-box__container img {
-  height: 100%;
-  width: 100%;
-  z-index: 0;
+.hero__img-box__container .myself {
+  top: 0;
+  position: absolute;
+  height: 70vh;
+  width: inherit;
+  z-index: 10;
+}
+.hero__img-box__container .circle {
+  position: absolute;
+  bottom: -80px;
+  right: -130px;
+  width: 200px;
+  height: 200px;
+  z-index: 10;
+  animation: circleAnimation 20s linear infinite;
+}
+.hero__img-box__container .fitaSup {
+  position: absolute;
+  top: -100px;
+  right: calc(40% - 100px);
+  width: 300px;
+  height: 200px;
+  z-index: 11;
+}
+.hero__img-box__container .fitaInf {
+  position: absolute;
+  bottom: -100px;
+  right: calc(40% - 100px);
+  width: 300px;
+  height: 200px;
+  z-index: 11;
+}
+.hero__img-box__container .elAbstract {
+  animation: upDownAnimation 10s linear infinite;
+  position: absolute;
+  top: 100px;
+  left: -150px;
+  width: 300px;
+  height: 300px;
+  z-index: 8;
 }
 
 /*# sourceMappingURL=sectionHero.css.map */

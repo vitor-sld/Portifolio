@@ -1,13 +1,33 @@
 @import "./_variaveis";
 
+@keyframes circleAnimation {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes upDownAnimation {
+    0% {
+        margin-top: 0;
+    }
+    50%{
+        margin-top: -100px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+
+}
+
 .hero {
     @include telaDividida;
-    background-image: url("a.png") !important;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-    
-    
+
+
     border: 1px solid white;
 
     &__text-box {
@@ -20,7 +40,9 @@
 
         &__links {
             a {
-                ion-icon, img {
+
+                ion-icon,
+                img {
                     font-size: 40px;
                     width: 40px;
                     color: white;
@@ -35,7 +57,7 @@
         .p-resume-about-me {
             font-size: 24px;
             line-height: 140%;
-            color: rgb(141, 141, 141);
+            color: white;
 
 
 
@@ -44,22 +66,67 @@
 }
 
 .hero__img-box {
-    width: 100%;
+    height: 70vh;
+    width: 50%;
     margin: auto;
     max-height: 90vh;
     max-width: 50vh;
+    position: relative;
 
 
 
 
     &__container {
-        img {
-            height: 100%;
-            width: 100%;
-            z-index: 0;
+        .myself {
+            top: 0;
+            position: absolute;
+            height: 70vh;
+            width: inherit;
+            z-index: 10;
+}
+
+
+        .circle {
+            position: absolute;
+            bottom: -80px;
+            right: -130px;
+            width: 200px;
+            height: 200px;
+            z-index: 10;
+            animation: circleAnimation 20s linear infinite;
+        }
+
+        .fitaSup{
+            position: absolute;
+            top: -100px;
+            right: calc(40% - 100px);
+            width: 300px;
+            height: 200px;
+            z-index: 11;
+        }
+
+        .fitaInf{
+            position: absolute;
+            bottom: -100px;
+            right: calc(40% - 100px);
+            width: 300px;
+            height: 200px;
+            z-index: 11;
+        }
+        .elAbstract{
+        animation: upDownAnimation 10s linear infinite;
+        
+            position: absolute;
+            top: 100px;
+            left: -150px;
+            width: 300px;
+            height: 300px;
+            z-index: 8;
+        }
+
         }
     }
-}
+    
 
 
 

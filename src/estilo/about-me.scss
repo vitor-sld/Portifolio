@@ -2,15 +2,28 @@
 
 .about-me {
     @include telaDividida;
+    display: block;
 
+    .h3 {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 100px;
+    }
 
     .about-me__container {
         padding: 0 100px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
 
         .about-me__imgPart {
+            flex: 1;
+
             .about-me-img {
                 width: 500px;
                 height: 600px;
@@ -22,13 +35,47 @@
         }
 
         .about-me__description {
-            width: 40%;
-            margin-left: 40px;
+            flex: 2;
+            padding: 0 50px;
 
-            h1 {
-                text-align: start;
+            h6 {
+                text-align: center;
                 margin-bottom: 20px;
                 color: rgb(253, 204, 140);
+            }
+
+            p {
+                text-align: start;
+                margin-bottom: 20px;
+                line-height: 150%;
+                color: rgb(211, 211, 211);
+            }
+
+            .span-AboutMe {
+                font-size: 20px;
+                text-align: center;
+                width: 100%;
+            }
+
+            .bt-container {
+                display: flex;
+                justify-content: space-between;
+                .btn{
+                    text-align: center;
+                    flex: 1;
+                    margin: 0 25px ;
+                    padding: 15px 30px;
+                    border: 1px solid white;
+                }
+                .btn-Contato:hover{
+                    border-color: greenyellow;
+                    color:greenyellow;
+                }
+
+                .btn-Portifolio:hover{
+                    border-color: greenyellow;
+                    color:greenyellow;
+                }
 
             }
         }

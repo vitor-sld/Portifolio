@@ -4,6 +4,7 @@ comunicacao.onclick = () => {
     gestao.style.height = "75px";
     lideranca.style.height = "75px";
     verificador(comunicacao);
+    console.log(comunicacao)
 }
 
 resolucao.onclick = () => {
@@ -44,9 +45,9 @@ lideranca.onclick = () => {
 
 function verificador (varVerificar){
     if (varVerificar.style.height != "75px"){
-        varVerificar.style.height = "75px"
+        varVerificar.style.height = "75px";
+
     }else{
-        varVerificar.style.height = "250px"
+        varVerificar.style.height = "250px";
     }
 }
-

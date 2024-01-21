@@ -3,6 +3,7 @@
 
 
 .skills {
+    border: 2px solid white;
     padding: 0px 0;
 
     &__itens__habilidades__container {
@@ -24,9 +25,9 @@
             .container {
                 padding: 0 100px 0 0;
 
-                button{
-                    outline: none ;
-                    border: none ;
+                button {
+                    outline: none;
+                    border: none;
                 }
 
                 .collapseContainer {
@@ -35,7 +36,8 @@
                     background-color: black;
                     border-bottom: 1px solid white;
                     overflow: hidden;
-                    transition: all .5s ease-in-out ;
+                    transition: all .5s ease-in-out;
+
 
                     .collapse-Soft-Skills {
                         width: 100%;
@@ -47,21 +49,24 @@
                         align-items: center;
                         transition: 1s;
                         margin-bottom: 5px;
+                        cursor: pointer;
 
 
 
                         p {
                             font-size: 30px;
                             padding: 0 20px;
-                            
+
                         }
 
                         span {
+                            visibility: hidden;
                             font-size: 30px;
                             padding: 0 20px;
-                            // transform: rotate(45deg);
                             transition: 1s;
+                            transition: transform 0.3s ease;
                         }
+
                     }
 
                     .textCollapse {
@@ -73,6 +78,10 @@
                         line-height: 30px;
                     }
                 }
+                    .collapseContainer:hover button>span {
+                        visibility: visible;
+                    }
+               
             }
 
 
@@ -110,7 +119,7 @@
                     align-items: center;
                     margin: 0px auto;
                     padding: 10px 20px;
-                    
+
 
                     border: 1px solid white;
                     border-radius: 50px;
