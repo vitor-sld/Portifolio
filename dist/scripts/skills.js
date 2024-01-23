@@ -51,18 +51,3 @@ function verificador (varVerificar){
 }
 
 
-btMenu.onclick = () => {
-    links.style.display = "block"
-}
-
-btClose.onclick = () => {
-    links.style.display = "none"
-}
-navItem = document.querySelectorAll('.nav-link')
-alert(navItem)
-
-navItem.forEach(element => {
-    element.addEventListener('click',() => {
-        links.style.display = "none";
-    })
-});
