@@ -55,16 +55,26 @@
 
 @media (max-width: 1375px) {
   .projects {
-    padding: 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 100px 100px;
+    display: block;
+    background-image: url("https://raw.githubusercontent.com/vitor-sld/Portif-lio/main/src/images/montanhas.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .projects h2 {
+    text-align: center;
   }
   .projects__container {
     display: flex;
-    justify-content: space-between;
-    height: 100%;
+    justify-content: space-around;
   }
   .projects__container__box {
-    width: 30%;
-    margin: 100px 0px;
+    width: 25%;
+    margin: 100px 50px;
     border-radius: 3px;
     background-color: black;
     overflow: hidden;
@@ -73,12 +83,12 @@
   }
   .projects__container__box img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
     object-position: top;
   }
   .projects__container__box p {
-    padding: 20px;
+    padding: 36px;
   }
   .projects__container__box:hover {
     transform: scale(1.1);
@@ -89,7 +99,62 @@
     padding: 10px 20px;
     font-size: 20px;
     text-align: center;
-    margin: -50px auto 50px;
+    margin: auto;
+    border: 3px solid white;
+    background-color: black;
+    transition: 0.5s;
+  }
+  .projects a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+@media (max-width: 1375px) and (max-width: 970px) {
+  .projects {
+    padding: 25px 0;
+    background-image: url("https://raw.githubusercontent.com/vitor-sld/Portif-lio/ec8080ea02791eaba020bc46b460edecd2e7f2b1/src/images/backgroundProjetosMobile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .projects h2 {
+    text-align: center;
+    background-color: black;
+    padding: 25px;
+  }
+  .projects__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects__container__box {
+    width: 100%;
+    max-width: 80vw;
+    margin: 50px 50px;
+    border-radius: 3px;
+    background-color: black;
+    overflow: hidden;
+    border: 5px solid white;
+    transition: 0.5s all ease-in;
+  }
+  .projects__container__box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+  }
+  .projects__container__box p {
+    padding: 36px;
+  }
+  .projects__container__box:hover {
+    transform: scale(1.1);
+  }
+  .projects a {
+    display: block;
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
     border: 3px solid white;
     background-color: black;
     transition: 0.5s;

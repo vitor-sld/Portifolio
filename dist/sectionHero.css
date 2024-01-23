@@ -167,7 +167,8 @@
 }
 @media (max-width: 970px) {
   .hero {
-    max-height: 70vw;
+    min-height: 70vh;
+    max-height: 70vh;
     padding: 50px 25px;
   }
   .hero .hero__img-box {
@@ -214,6 +215,72 @@
     width: 150px;
     height: 150px;
     z-index: 8;
+  }
+}
+@media (max-width: 700px) {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    max-height: none;
+  }
+  .hero .hero__img-box {
+    display: block;
+    height: 400px;
+  }
+  .hero__container .myself {
+    top: 0;
+    right: 0;
+    position: absolute;
+    height: 400px;
+    width: inherit;
+    z-index: 10;
+  }
+  .hero__container .circle {
+    position: absolute;
+    bottom: 200px;
+    right: 0px;
+    width: 120px;
+    height: 120px;
+    z-index: 9;
+    animation: circleAnimation 20s linear infinite;
+  }
+  .hero__container .fitaSup {
+    position: absolute;
+    top: -100px;
+    right: calc(45% - 100px);
+    width: 150px;
+    height: 200px;
+    z-index: 11;
+  }
+  .hero__container .fitaInf {
+    display: none;
+  }
+  .hero__container .elAbstract {
+    animation: upDownAnimation 10s linear infinite;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+    z-index: 8;
+  }
+  .hero__text-box {
+    width: 90vw;
+  }
+  .hero__text-box__titulos {
+    margin: 20px 0;
+  }
+  .hero__text-box__links a ion-icon,
+  .hero__text-box__links a img {
+    font-size: 40px;
+    width: 40px;
+    color: white;
+    margin: 20px 10px 30px;
+  }
+  .hero__text-box__resume-about-me .p-resume-about-me {
+    font-size: 24px;
+    line-height: 140%;
+    color: white;
   }
 }
 
