@@ -18,18 +18,21 @@ a {
     position: relative;
     text-decoration: none;
 }
-p{
+
+p {
     font-family: $paragraphFont;
 }
-.bold{
-    
-}
 
-h1{
+
+h1 {
     font-family: $title;
 }
 
-h2,h3,h4,h5,h6{
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $subtitle;
 }
 
@@ -52,6 +55,10 @@ nav a#linkWhatsapp::after {
 
 nav a:hover:after {
     transform: scaleX(1);
+}
+
+#logoSite::after {
+    display: none;
 }
 
 a:hover {
@@ -83,3 +90,59 @@ h5,
 
 }
 
+.hero {
+    @include telaDividida;
+
+
+    border: 1px solid white;
+
+    &__text-box {
+        width: 40vw;
+        margin: auto;
+
+        &__titulos {
+            margin: 20px 0;
+        }
+
+        &__links {
+            a {
+
+                ion-icon,
+                img {
+                    font-size: 40px;
+                    width: 40px;
+                    color: white;
+                    margin: 20px 10px 30px;
+                }
+            }
+        }
+
+    }
+
+    &__text-box__resume-about-me {
+        .p-resume-about-me {
+            font-size: 24px;
+            line-height: 140%;
+            color: white;
+
+
+
+        }
+    }
+}
+
+@media (max-width: 1375px) {
+
+    h1,
+    .h1 {
+        font-size: 2em;
+    }
+
+    h2,
+    .h2 {
+        font-size: 1.5em;
+    }
+    p{
+        font-size: 16px;
+    }
+}

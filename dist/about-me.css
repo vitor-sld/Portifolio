@@ -11,7 +11,7 @@
 }
 .about-me p {
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .about-me .about-me__container {
   padding: 0 100px;
@@ -46,7 +46,6 @@
   color: rgb(211, 211, 211);
 }
 .about-me .about-me__container .about-me__description .span-AboutMe {
-  font-size: 20px;
   text-align: center;
   width: 100%;
 }
@@ -68,6 +67,116 @@
 .about-me .about-me__container .about-me__description .bt-container .btn-Portifolio:hover {
   border-color: greenyellow;
   color: greenyellow;
+}
+
+@media (max-width: 1375px) {
+  .about-me {
+    padding: inherit 50px;
+  }
+  .about-me .h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .about-me p {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .about-me .about-me__container {
+    padding: 0 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .about-me .about-me__container .about-me__imgPart {
+    flex: 1;
+    margin-top: 20px;
+  }
+  .about-me .about-me__container .about-me__imgPart .about-me-img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    border: 10px white solid;
+    border-radius: 5px;
+  }
+  .about-me .about-me__container .about-me__description {
+    flex: 2;
+    padding: 0 0 0 25px;
+  }
+  .about-me .about-me__container .about-me__description h6 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(253, 204, 140);
+  }
+  .about-me .about-me__container .about-me__description p {
+    text-align: start;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgb(211, 211, 211);
+  }
+  .about-me .about-me__container .about-me__description .span-AboutMe {
+    text-align: center;
+    width: 100%;
+  }
+  .about-me .about-me__container .about-me__description .bt-container {
+    display: flex;
+  }
+  .about-me .about-me__container .about-me__description .bt-container .btn {
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    padding: 10px 15px;
+    border: 1px solid white;
+  }
+  .about-me .about-me__container .about-me__description .bt-container .btn:first-child {
+    margin-right: 20px;
+  }
+  .about-me .about-me__container .about-me__description .bt-container .btn:hover {
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 970px) {
+  .about-me {
+    padding: 50px 50px;
+  }
+  .about-me .h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .about-me p {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .about-me .about-me__container {
+    padding: 0 0px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about-me .about-me__container .about-me__imgPart {
+    flex: 1;
+    margin: 20px 0 40px;
+  }
+  .about-me .about-me__container .about-me__imgPart .about-me-img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    border: 10px white solid;
+    border-radius: 5px;
+  }
+  .about-me .about-me__container .about-me__description {
+    flex: 2;
+    padding: 0 0 0 25px;
+  }
+  .about-me .about-me__container .about-me__description h6 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(253, 204, 140);
+  }
+  .about-me .about-me__container .about-me__description .bt-container {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=about-me.css.map */

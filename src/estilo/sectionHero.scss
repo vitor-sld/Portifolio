@@ -14,7 +14,8 @@
     0% {
         margin-top: 0;
     }
-    50%{
+
+    50% {
         margin-top: -100px;
     }
 
@@ -83,7 +84,7 @@
             height: 70vh;
             width: inherit;
             z-index: 10;
-}
+        }
 
 
         .circle {
@@ -96,7 +97,7 @@
             animation: circleAnimation 20s linear infinite;
         }
 
-        .fitaSup{
+        .fitaSup {
             position: absolute;
             top: -100px;
             right: calc(40% - 100px);
@@ -105,7 +106,7 @@
             z-index: 11;
         }
 
-        .fitaInf{
+        .fitaInf {
             position: absolute;
             bottom: -100px;
             right: calc(40% - 100px);
@@ -113,9 +114,10 @@
             height: 200px;
             z-index: 11;
         }
-        .elAbstract{
-        animation: upDownAnimation 10s linear infinite;
-        
+
+        .elAbstract {
+            animation: upDownAnimation 10s linear infinite;
+
             position: absolute;
             top: 100px;
             left: -150px;
@@ -124,9 +126,170 @@
             z-index: 8;
         }
 
+    }
+}
+
+@media (max-width: 1375px) {
+    .hero {
+        max-height: 70vw;
+        &__text-box {
+            flex: 1;
+            margin: auto;
+
+            &__links {
+                a {
+
+                    ion-icon,
+                    img {
+                        font-size: 40px;
+                        width: 40px;
+                        color: white;
+                        margin: 20px 10px 30px;
+                    }
+                }
+            }
+
+        }
+
+        &__text-box__resume-about-me {
+            .p-resume-about-me {
+                font-size: 16px;
+                line-height: 140%;
+                color: white;
+            }
         }
     }
-    
+
+    .hero__img-box {
+        height: 70vh;
+        width: 50%;
+        margin: auto;
+        max-height: 90vh;
+        max-width: 50vh;
+        position: relative;
+
+
+
+
+        &__container {
+            .myself {
+                top: 0;
+                right: 0;
+                position: absolute;
+                height: 50vh;
+                width: inherit;
+                z-index: 10;
+            }
+
+
+            .circle {
+                position: absolute;
+                bottom: 150px;
+                right: -50px;
+                width: 120px;
+                height: 120px;
+                z-index: 10;
+                animation: circleAnimation 20s linear infinite;
+            }
+
+            .fitaSup {
+                position: absolute;
+                top: -100px;
+                right: calc(45% - 100px);
+                width: 150px;
+                height: 200px;
+                z-index: 11;
+            }
+
+            .fitaInf {
+                position: absolute;
+                bottom: 70px;
+                right: calc(45% - 100px);
+                width: 150px;
+                height: 200px;
+                z-index: 11;
+            }
+
+            .elAbstract {
+                animation: upDownAnimation 10s linear infinite;
+                position: absolute;
+                top: 100px;
+                left: -0px;
+                width: 150px;
+                height: 150px;
+                z-index: 8;
+            }
+
+        }
+    }
+
+}
+@media (max-width: 970px) {
+    .hero {
+        max-height: 70vw;
+        padding:  50px 25px;
+
+
+    .hero__img-box {
+        height: 70vh;
+        width: 50%;
+        margin: auto;
+        max-height: 90vh;
+        max-width: 40vh;
+        position: relative;
+
+
+
+
+        &__container {
+            .myself {
+                top: 0;
+                right: 0;
+                position: absolute;
+                height: 40vh;
+                width: inherit;
+                z-index: 10;
+            }
+
+
+            .circle {
+                position: absolute;
+                bottom: 200px;
+                right: 0px;
+                width: 120px;
+                height: 120px;
+                z-index: 9;
+                animation: circleAnimation 20s linear infinite;
+            }
+
+            .fitaSup {
+                position: absolute;
+                top: -100px;
+                right: calc(45% - 100px);
+                width: 150px;
+                height: 200px;
+                z-index: 11;
+            }
+
+            .fitaInf {
+                display: none;
+            }
+
+            .elAbstract {
+                animation: upDownAnimation 10s linear infinite;
+                position: absolute;
+                top: 100px;
+                left: -0px;
+                width: 150px;
+                height: 150px;
+                z-index: 8;
+            }
+
+        }
+    }
+}
+}
+
 
 
 

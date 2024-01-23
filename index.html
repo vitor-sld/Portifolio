@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="dist/arrowSection.css">
     <link rel="stylesheet" href="dist/skills.css">
     <link rel="stylesheet" href="dist/about-me.css">
-
-
-
+    <link rel="stylesheet" href="dist/projects.css">
+    <link rel="stylesheet" href="dist/contatos.css">
+    <link rel="stylesheet" href="dist/footer.css">
 
 
 </head>
@@ -30,20 +30,23 @@
 
             <div class="nav__nav-container">
                 <div class="nav__nav-container__logo">
-                    <a href="hero" role="link" title="logo do site, ao clicar levará ao topo da página"><img
+                    <a href="hero" role="link" title="logo do site, ao clicar levará ao topo da página" id="logoSite"><img
                             src="src/images/LogoSite (2).png" alt="logo do Portifólio de Vitor Augusto" role="img"
                             class="img-logo"></a>
                 </div>
             </div>
-
-            <div class="nav__nav-container">
+           
+            <button type="button" id="btMenu"> <ion-icon name="grid-outline"></ion-icon></button>
+        
+            <div class="nav__nav-container" id="links">
                 <div class="nav__nav-container__links-container">
-                    <a class="nav-link" href="hero" role="link" title="topo do site">início</a>
-                    <a class="nav-link" href="#habilidades" role="link" title="seção de habilidades">habilidades</a>
-                    <a class="nav-link" href="#" role="link" title="seção contatos"> Projetos</a>
-                    <a class="nav-link" href="#" role="link" title="seção sobre mim">Sobre mim</a>
-                    <a class="nav-link" href="#" role="link" title="seção contatos"> contatos</a>
-                    <a class="nav-link" id="linkWhatsapp" href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    <button type="button" id="btClose"><ion-icon name="close-outline"></ion-icon></button>
+                    <a class="nav-link navJS" href="#hero" role="link" title="topo do site">início</a>
+                    <a class="nav-link navJS" href="#habilidades" role="link" title="seção de habilidades">habilidades</a>
+                    <a class="nav-link navJS" href="#about-me" role="link" title="seção sobre mim">Sobre mim</a>
+                    <a class="nav-link navJS" href="#projects" role="link" title="seção contatos"> Projetos</a>
+                    <a class="nav-link navJS" href="#contacts" role="link" title="seção contatos"> contatos</a>
+                    <a class="nav-link navJS" id="linkWhatsapp" href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
                 </div>
             </div>
         </nav>
@@ -72,8 +75,8 @@
                     <a href="#"><ion-icon name="logo-github"></ion-icon></a>
                     <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
                     <a href=""><ion-icon name="mail-outline" alt=""></ion-icon></a>
-                    <a href="./src/Portifólio.pdf" download=""><img src="./src/images/icons/portfolio.png"
-                            alt="portfolio" title="Baixar portfólio" srcset=""></a>
+                    <a href="./src/Portifólio.pdf" download><img src="./src/images/icons/portfolio.png" alt="portfolio"
+                            title="Baixar portfólio" srcset=""></a>
 
                 </div>
             </div>
@@ -84,10 +87,11 @@
                 <img class="myself" src="src/images/imgHero.png"
                     alt="Imagem do Vitor Augusto olhando para o lado com o braço apoiado um uma mesa">
                 <img class="circle" src="src/images/hero/circle.png" alt="circulo">
-                <img class="fitaSup" src="src/images/hero/fita.png" alt="imagem de uma fita para simular que está segurando a imagem">
-                <img class="fitaInf" src="src/images/hero/fita.png" alt="imagem de uma fita para simular que está segurando a imagem">
-                <img class="elAbstract" src="src/images/hero/formaAbstrata.png" alt="forma Abstrata" srcset="">
-
+                <img class="fitaSup" src="src/images/hero/fita.png"
+                    alt="imagem de uma fita para simular que está segurando a imagem">
+                <img class="fitaInf" src="src/images/hero/fita.png"
+                    alt="imagem de uma fita para simular que está segurando a imagem">
+                <img class="elAbstract" src="src/images/hero/formaAbstrata.png" alt="forma Abstrata">
 
 
             </div>
@@ -209,23 +213,73 @@
             <div class="about-me__description">
 
                 <h6 class="h6">Sobre mim</h6>
-                <p>Muito prazer, como você já deve ter visto antes, meu nome é Vitor Augusto, tenho 20 anos. Atualmente estou me graduando em ADS(Análise e Desenvolvimento de Sitemas) na PUC.</p>
-                <p>Eu sou um dev que busca iniciar profissionalmente no mundo da programação. Todavia, Já tive diversas oportunidades de programar profissionalmente, inclusive atualmente contribuo com um projeto beneficente para a readpatação de mulheres ao mercado de trabalho pós maternidade. Também participei da elaboração do e-commerce da empresa Capim Limão Cosméticos em parceiria com a Sheila Mello(dançarina do grupo Éo Tchan!) </p>
-                <p>Me descrevendo profissionalmente em poucas linhas, sou uma pessoa que busca organizar as etapas e classificá-las em ordem de prioridade, respeitando prazos e urgências. Já pessoalmente, sou uma pessoa respeitosa, bem humorada e que está sempre disposta a aprender algo novo.</p>
-                <p><span class="span-AboutMe" >Abaixo eu disponibilizo o meu contato para conversarmos mais e o meu portifólio</span> </p>
+                <p>Muito prazer, como você já deve ter visto antes, meu nome é Vitor Augusto, tenho 20 anos. Atualmente
+                    estou me graduando em ADS(Análise e Desenvolvimento de Sitemas) na PUC.</p>
+                <p>Eu sou um dev que busca iniciar profissionalmente no mundo da programação. Todavia, Já tive diversas
+                    oportunidades de programar profissionalmente, inclusive atualmente contribuo com um projeto
+                    beneficente para a readpatação de mulheres ao mercado de trabalho pós maternidade. Também participei
+                    da elaboração do e-commerce da empresa Capim Limão Cosméticos em parceiria com a Sheila
+                    Mello(dançarina do grupo Éo Tchan!) </p>
+                <p>Me descrevendo profissionalmente em poucas linhas, sou uma pessoa que busca organizar as etapas e
+                    classificá-las em ordem de prioridade, respeitando prazos e urgências. Já pessoalmente, sou uma
+                    pessoa respeitosa, bem humorada e que está sempre disposta a aprender algo novo.</p>
+                <p><span class="span-AboutMe">Abaixo eu disponibilizo o meu contato para conversarmos mais e o meu
+                        portifólio</span> </p>
                 <div class="bt-container">
                     <a class="btn btn-Contato" href="tel:11939036448">Quero te dar uma chance</a>
                     <a class="btn btn-Portifolio" href="./src/Portifólio.pdf" download="">Ver Portifólio</a>
-                    
+
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <h2 class="h3">Meus projetos</h2>
-        <div class="projects__container"></div>
+        <div class="projects__container">
+            <div class="projects__container__box">
+                <img src="src/images/SiteDisney.png" alt="Site cópia da Disney" srcset="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam tempore et error rerum! Sint
+                    facere dicta maxime nemo corrupti, ipsum ea distinctio ut ab earum non nobis aspernatur voluptatum!
+                </p>
+            </div>
+
+            <div class="projects__container__box">
+                <img src="src/images/pizzariaSite.png" alt="Site de uma pizzaria fantasia" srcset="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam tempore et error rerum! Sint
+                    facere dicta maxime nemo corrupti, ipsum ea distinctio ut ab earum non nobis aspernatur voluptatum!
+                </p>
+            </div>
+
+            <div class="projects__container__box">
+                <img src="src/images/expressoCafe.png" alt="Site Rocket Coffee" srcset="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam tempore et error rerum! Sint
+                    facere dicta maxime nemo corrupti, ipsum ea distinctio ut ab earum non nobis aspernatur voluptatum!
+                </p>
+            </div>
+        </div>
+
+        <a href="https://github.com/vitor-sld" target="_blank">Mais projetos</a>
     </section>
+
+    <section class="contatos" id="contacts">
+        <div class="contatos__titulos">
+            <h2>Dê uma chance para este DEV</h2>
+            <p>A seguir temos uma lista de formas de como entrar em contato comigo ou conhecer mais do meu trabalho</p>
+        </div>
+        <div class="contatos__lista">
+            <ul>
+                <li>Email: <a href="mailto:vitor.cteles@outlook.com">Vitor.cteles@outlook.com</a></li>
+                <li>Telefone: <a href="tel:11939036448">(11)93903-6448</a></li>
+                <li>Github: <a href="https://github.com/vitor-sld">Vitor-SLD</a></li>
+                <li>Portifólio: <a href="./src/Portifólio.pdf" download> Baixar Portifólio</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        Site pensado e desenvolvido por Vitor Augusto || 2024
+    </footer>
 
     <script src="dist/scripts/skills.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

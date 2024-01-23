@@ -1,3 +1,116 @@
-.projects{
-    background-image: url();
+@import "./_variaveis";
+
+.projects {
+    @include telaDividida;
+    display: block;
+    background-image: url('https://raw.githubusercontent.com/vitor-sld/Portif-lio/main/src/images/montanhas.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2 {
+        text-align: center;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+
+        &__box {
+            width: 25%;
+            margin: 100px 50px;
+            border-radius: 3px;
+            background-color: black;
+            overflow: hidden;
+            border:5px solid white;
+            transition: .5s all ease-in;
+
+            
+            
+            img{
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                object-position: top;
+            }
+            p{
+                padding: 36px;
+            }
+        }
+        &__box:hover{
+            transform: scale(1.1);
+        }
+    }
+    a{
+        display: block;
+        width: 200px;
+        padding: 10px 20px ;
+        font-size: 20px;
+        text-align: center;
+        margin: auto;
+        border: 3px solid white;
+        background-color: black;
+        transition: .5s;
+    }
+    a:hover{
+color: white;
+text-decoration: underline;
+    }
+}
+
+@media (max-width: 1375px) {
+
+    .projects {
+        padding: 50px 50px;
+    
+        h2 {
+
+        }
+    
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            height:100%;
+    
+            &__box {
+                width: 30%;
+                margin: 100px 0px;
+                border-radius: 3px;
+                background-color: black;
+                overflow: hidden;
+                border:5px solid white;
+                transition: .5s all ease-in;
+    
+                
+                
+                img{
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                    object-position: top;
+                }
+                p{
+                    padding: 20px;
+                }
+            }
+            &__box:hover{
+                transform: scale(1.1);
+            }
+        }
+        a{
+            display: block;
+            width: 200px;
+            padding: 10px 20px ;
+            font-size: 20px;
+            text-align: center;
+            margin: -50px auto 50px;
+            border: 3px solid white;
+            background-color: black;
+            transition: .5s;
+        }
+        a:hover{
+    color: white;
+    text-decoration: underline;
+        }
+    }
 }
