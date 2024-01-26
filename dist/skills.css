@@ -282,56 +282,48 @@
     color: rgb(253, 204, 140);
   }
 }
-@media (max-width: 970px) {
-  .projects {
-    padding: 50px 0;
-    background-image: url("https://raw.githubusercontent.com/vitor-sld/Portif-lio/main/src/images/fotoSkills.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .projects h2 {
-    text-align: center;
-  }
-  .projects__container {
-    display: flex;
-    justify-content: space-around;
-  }
-  .projects__container__box {
-    width: 25%;
-    margin: 100px 50px;
-    border-radius: 3px;
-    background-color: black;
-    overflow: hidden;
-    border: 5px solid white;
-    transition: 0.5s all ease-in;
-  }
-  .projects__container__box img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    object-position: top;
-  }
-  .projects__container__box p {
-    padding: 36px;
-  }
-  .projects__container__box:hover {
-    transform: scale(1.1);
-  }
-  .projects a {
-    display: block;
-    width: 200px;
-    padding: 10px 20px;
+@media (max-width: 500px) {
+  .skills__itens__habilidades__container .habilidades-column-left .container .collapseContainer .collapse-Soft-Skills p {
     font-size: 20px;
-    text-align: center;
-    margin: auto;
-    border: 3px solid white;
-    background-color: black;
-    transition: 0.5s;
+    padding: 0 20px;
   }
-  .projects a:hover {
-    color: white;
-    text-decoration: underline;
+  .skills__itens__habilidades__container .habilidades-column-left .container .collapseContainer .collapse-Soft-Skills .pTitulo {
+    padding: 0 0 0 10px;
+    font-size: 17px;
+  }
+  .skills__itens__habilidades__container .habilidades-column-left .container .collapseContainer .collapse-Soft-Skills span {
+    visibility: hidden;
+    font-size: 20px;
+    padding: 0 20px;
+    transition: 1s;
+    transition: transform 0.3s ease;
+  }
+  .skills__itens__habilidades__container .habilidades-column-left .container .collapseContainer .textCollapse {
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 400;
+    color: beige;
+    font-family: sans-serif;
+    line-height: 30px;
+  }
+  .skills__itens__habilidades__container .habilidades-column-left .container .collapseContainer:hover button > span {
+    visibility: visible;
+  }
+  .skills__itens__habilidades__container .habilidades-column-right .container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px 5px;
+  }
+  .skills__itens__habilidades__container .habilidades-column-right .container h5 {
+    width: 150px;
+  }
+  .skills__itens__habilidades__container .habilidades-column-right .container h5 :last-child {
+    margin-bottom: 0;
+  }
+  .skills__itens__habilidades__container .habilidades-column-right .container h5 :last-child p {
+    font-size: 11px;
+  }
+  .skills .habilidades-column-right .container h5 p {
+    font-size: 11px !important;
   }
 }
 
