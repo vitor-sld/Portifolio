@@ -178,5 +178,10 @@
     display: flex;
   }
 }
+@media (max-width: 500px) {
+  .about-me__container .about-me__imgPart .about-me-img {
+    max-width: 90vw;
+  }
+}
 
 /*# sourceMappingURL=about-me.css.map */
