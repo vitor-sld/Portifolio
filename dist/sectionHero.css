@@ -55,7 +55,8 @@
 .hero__img-box__container .myself {
   top: 0;
   position: absolute;
-  height: 70vh;
+  height: 100%;
+  width: 100%;
   width: inherit;
   z-index: 10;
 }
@@ -217,7 +218,7 @@
     z-index: 8;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .hero {
     display: flex;
     flex-direction: column-reverse;
@@ -225,17 +226,23 @@
   }
   .hero .hero__img-box {
     display: block;
-    height: 400px;
+    width: 100vw;
+    height: 50vh;
+    background-color: aliceblue;
   }
-  .hero__container .myself {
-    top: 0;
-    right: 0;
-    position: absolute;
-    height: 400px;
-    width: inherit;
+  .hero .hero__img-box__container {
+    width: 100%;
+    height: 100%;
+  }
+  .hero .hero__img-box__container .myself {
+    display: block;
+    position: relative;
+    height: 100%;
+    max-width: 100vw;
     z-index: 10;
   }
-  .hero__container .circle {
+  .hero .hero__img-box__container .circle {
+    display: none;
     position: absolute;
     bottom: 200px;
     right: 0px;
@@ -244,7 +251,7 @@
     z-index: 9;
     animation: circleAnimation 20s linear infinite;
   }
-  .hero__container .fitaSup {
+  .hero .hero__img-box__container .fitaSup {
     position: absolute;
     top: -100px;
     right: calc(45% - 100px);
@@ -252,10 +259,11 @@
     height: 200px;
     z-index: 11;
   }
-  .hero__container .fitaInf {
+  .hero .hero__img-box__container .fitaInf {
     display: none;
   }
-  .hero__container .elAbstract {
+  .hero .hero__img-box__container .elAbstract {
+    display: none;
     animation: upDownAnimation 10s linear infinite;
     position: absolute;
     top: 100px;
@@ -266,9 +274,14 @@
   }
   .hero__text-box {
     width: 90vw;
+    text-align: center;
   }
   .hero__text-box__titulos {
     margin: 20px 0;
+  }
+  .hero__text-box__titulos h1 {
+    text-align: center;
+    margin-bottom: 10px;
   }
   .hero__text-box__links a ion-icon,
   .hero__text-box__links a img {
@@ -278,7 +291,7 @@
     margin: 20px 10px 30px;
   }
   .hero__text-box__resume-about-me .p-resume-about-me {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 140%;
     color: white;
   }

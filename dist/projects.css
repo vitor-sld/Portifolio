@@ -64,17 +64,19 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 100px 0px;
   }
   .projects h2 {
     text-align: center;
+    font-size: 3em;
   }
   .projects__container {
     display: flex;
     justify-content: space-around;
   }
   .projects__container__box {
-    width: 25%;
-    margin: 100px 50px;
+    width: 30%;
+    margin: 100px 10px;
     border-radius: 3px;
     background-color: black;
     overflow: hidden;
