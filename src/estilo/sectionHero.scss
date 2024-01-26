@@ -404,7 +404,9 @@
 @media (max-width: 500px) {
     .hero {
 
+        padding: 0;
         &__img-box {
+            padding: 0;
             display: block;
             width: 90vw;
             height: 50vh;
