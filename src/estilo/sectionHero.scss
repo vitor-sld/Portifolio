@@ -403,6 +403,28 @@
 
 @media (max-width: 500px) {
     .hero {
+
+        &__img-box {
+            display: block;
+            width: 90vw;
+            height: 50vh;
+            background-color: aliceblue;
+
+            &__container {
+                width: 100%;
+                height: 100%;
+
+                .myself {
+                    display: block;
+                    position: relative;
+                    height: 100%;
+                    max-width: 100vw;
+                    z-index: 10;
+                }
+            }
+        }
+
+
         &__text-box {
             width: 90vw;
             text-align: center;

@@ -23,4 +23,31 @@
   border: 1px solid white;
 }
 
+@media (max-width: 500px) {
+  .contatos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 100px 100px;
+    display: block;
+    padding: 100px 25px;
+  }
+  .contatos__titulos {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .contatos__titulos h2 {
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+  .contatos__lista {
+    font-size: 18px;
+  }
+  .contatos__lista ul li {
+    list-style: none;
+    padding: 20px;
+    border: 1px solid white;
+  }
+}
+
 /*# sourceMappingURL=contatos.css.map */

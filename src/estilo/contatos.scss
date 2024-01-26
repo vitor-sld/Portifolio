@@ -27,3 +27,33 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    .contatos {
+    @include telaDividida;
+    display: block;
+    padding: 100px 25px;
+    
+    &__titulos {
+        text-align: center;
+        margin-bottom: 50px;
+
+        h2{
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__lista {
+        font-size: 18px;
+
+        ul {
+            li {
+                list-style: none;
+                padding: 20px;
+                border: 1px solid white;
+            }
+        }
+    }
+}
+}

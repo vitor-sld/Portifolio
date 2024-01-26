@@ -298,6 +298,23 @@
   }
 }
 @media (max-width: 500px) {
+  .hero__img-box {
+    display: block;
+    width: 90vw;
+    height: 50vh;
+    background-color: aliceblue;
+  }
+  .hero__img-box__container {
+    width: 100%;
+    height: 100%;
+  }
+  .hero__img-box__container .myself {
+    display: block;
+    position: relative;
+    height: 100%;
+    max-width: 100vw;
+    z-index: 10;
+  }
   .hero__text-box {
     width: 90vw;
     text-align: center;
