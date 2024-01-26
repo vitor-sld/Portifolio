@@ -252,6 +252,7 @@
     animation: circleAnimation 20s linear infinite;
   }
   .hero .hero__img-box__container .fitaSup {
+    display: none;
     position: absolute;
     top: -100px;
     right: calc(45% - 100px);
