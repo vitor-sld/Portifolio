@@ -72,6 +72,7 @@
   .projects__container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
   }
   .projects__container__box {
     width: 30%;
@@ -163,6 +164,11 @@
   .projects a:hover {
     color: white;
     text-decoration: underline;
+  }
+}
+@media (max-width: 500px) {
+  .projects__container__box {
+    margin: 50px 0px;
   }
 }
 

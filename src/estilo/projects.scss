@@ -80,6 +80,7 @@
         &__container {
             display: flex;
             justify-content: space-around;
+            align-items: center;
 
             &__box {
                 width: 30%;
@@ -192,6 +193,36 @@
                 color: white;
                 text-decoration: underline;
             }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    .projects {
+
+
+
+        &__container {
+
+            &__box {
+                margin: 50px 0px;
+
+
+
+                img {
+                }
+
+                p {
+                }
+            }
+
+        }
+
+        a {
+        }
+
+        a:hover {
         }
     }
 }
