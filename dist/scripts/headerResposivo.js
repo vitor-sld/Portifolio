@@ -6,9 +6,20 @@ btClose.onclick = () => {
     links.style.display = "none"
 }
 navItem = document.querySelectorAll('.nav-link')
+verificarTamanhoTela();
+window.addEventListener('resize', verificarTamanhoTela);
 
-navItem.forEach(element => {
-    element.addEventListener('click',() => {
-        links.style.display = "none";
-    })
-});
+
+
+function verificarTamanhoTela() {
+    var larguraTela = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    if (larguraTela < 970) {
+        navItem.forEach(element => {
+            element.addEventListener('click',() => {
+                links.style.display = "none";
+            })
+        });
+    }
+}
+
