@@ -51,3 +51,4 @@ function verificador (varVerificar){
 }
 
 
+// fazer ClassLIST 
