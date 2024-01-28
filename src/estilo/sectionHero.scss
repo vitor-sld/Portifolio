@@ -89,6 +89,7 @@
 
 
         .circle {
+            
             position: absolute;
             bottom: -80px;
             right: -130px;
@@ -118,6 +119,7 @@
 
         .elAbstract {
             animation: upDownAnimation 10s linear infinite;
+            display: none;
 
             position: absolute;
             top: 100px;

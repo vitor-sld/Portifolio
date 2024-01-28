@@ -87,6 +87,7 @@
 }
 .hero__img-box__container .elAbstract {
   animation: upDownAnimation 10s linear infinite;
+  display: none;
   position: absolute;
   top: 100px;
   left: -150px;
