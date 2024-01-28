@@ -61,7 +61,6 @@
   z-index: 10;
 }
 .hero__img-box__container .circle {
-  display: none;
   position: absolute;
   bottom: -80px;
   right: -130px;
