@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+a.linkContatos {
+  text-decoration: underline !important;
+}
+
 p {
   font-family: "Volkhov", serif;
 }
