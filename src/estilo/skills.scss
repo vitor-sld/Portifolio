@@ -54,7 +54,7 @@
 
 
                         p {
-                            font-size: 30px;
+                            font-size: 22px;
                             padding: 0 20px;
 
                         }
@@ -70,7 +70,7 @@
                     }
 
                     .textCollapse {
-                        padding: 30px;
+                        padding: 0 30px;
                         font-size: 18px;
                         font-weight: 400;
                         color: beige;
@@ -163,7 +163,12 @@
 
 
     }
+    .collapseOpen {
+        height: auto !important;
+        padding: 0 0 50px;
+    }
 }
+
 
 @media (max-width: 1375px) {
     .skills {
@@ -464,8 +469,6 @@
 
 
                             }
-
-                            img {}
                         }
                     }
 
@@ -475,7 +478,13 @@
 
         }
     }
+
     .skills .habilidades-column-right .container h5 p {
         font-size: 11px !important;
+    }
+
+    .collapseOpen {
+        height: auto !important;
+        padding: 0 0 50px 0;
     }
 }

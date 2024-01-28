@@ -30,29 +30,31 @@
 
             <div class="nav__nav-container">
                 <div class="nav__nav-container__logo">
-                    <a href="hero" role="link" title="logo do site, ao clicar levará ao topo da página" id="logoSite"><img
-                            src="src/images/LogoSite (2).png" alt="logo do Portifólio de Vitor Augusto" role="img"
-                            class="img-logo"></a>
+                    <a href="hero" role="link" title="logo do site, ao clicar levará ao topo da página"
+                        id="logoSite"><img src="src/images/LogoSite (2).png" alt="logo do Portifólio de Vitor Augusto"
+                            role="img" class="img-logo"></a>
                 </div>
             </div>
-           
+
             <button type="button" id="btMenu"> <ion-icon name="grid-outline"></ion-icon></button>
-        
+
             <div class="nav__nav-container" id="links">
                 <div class="nav__nav-container__links-container">
                     <button type="button" id="btClose"><ion-icon name="close-outline"></ion-icon></button>
-                    <a class="nav-link navJS" href="#hero" role="link" title="topo do site">início</a>
-                    <a class="nav-link navJS" href="#habilidades" role="link" title="seção de habilidades">habilidades</a>
-                    <a class="nav-link navJS" href="#about-me" role="link" title="seção sobre mim">Sobre mim</a>
-                    <a class="nav-link navJS" href="#projects" role="link" title="seção contatos"> Projetos</a>
-                    <a class="nav-link navJS" href="#contacts" role="link" title="seção contatos"> contatos</a>
-                    <a class="nav-link navJS" id="linkWhatsapp" href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    <a class="nav-link navJS" href="#hero" title="topo do site">início</a>
+                    <a class="nav-link navJS" href="#habilidades" title="seção de habilidades">habilidades</a>
+                    <a class="nav-link navJS" href="#aboutMe" title="seção sobre mim">Sobre mim</a>
+                    <a class="nav-link navJS" href="#projects" title="seção contatos"> Projetos</a>
+                    <a class="nav-link navJS" href="#contacts" title="seção contatos"> contatos</a>
+                    <a class="nav-link navJS" id="linkWhatsapp"
+                        href="https://web.whatsapp.com/send/?phone=5511939036448"><ion-icon
+                            name="logo-whatsapp"></ion-icon></a>
                 </div>
             </div>
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="hero">
 
 
         <div class="hero__text-box">
@@ -66,15 +68,20 @@
 
 
                 <div class="hero__text-box__resume-about-me">
-                    <p class="p-resume-about-me">Meu nome e Vitor, eu sou um entusiasta da programação apaixonado por
-                        buscar constantemente o
-                        aperfeiçoamento na área. Atualmente, estou cursando Análise</p>
+                    <p class="p-resume-about-me">Me chamo Vitor Augusto, tenho 20 anos e sou um entusiasta da
+                        programação, buscando o crescimento dentro da área de programação. Meu currículo profissional
+                        atribui-se desde o ensino médio, onde cursei tecnico voltado para o desenvolvimento de sistemas
+                        e atualmente estou
+                        me graduando Análise de Sistemas, onde busco aprofundar meus conhecimentos e habilidades cada
+                        vez mais.</p>
                 </div>
 
                 <div class="hero__text-box__links">
                     <a href=""><ion-icon name="logo-github"></ion-icon></a>
-                    <a href="https://web.whatsapp.com/send/?phone=5511939036448"><ion-icon name="whatsapp" alt="ícone whatsapp"></ion-icon></a>
-                    <a href="mailto:vitor.cteles@outlook.com"><ion-icon name="mail-outline" alt=" ícone Email"></ion-icon></a>
+                    <a href="https://web.whatsapp.com/send/?phone=5511939036448"><ion-icon name="logo-whatsapp"
+                            alt="ícone whatsapp"></ion-icon></a>
+                    <a href="mailto:vitor.cteles@outlook.com"><ion-icon name="mail-outline"
+                            alt=" ícone Email"></ion-icon></a>
                     <a href="./src/Portifólio.pdf" download><img src="./src/images/icons/portfolio.png" alt="portfolio"
                             title="Baixar portfólio" srcset=""></a>
 
@@ -100,7 +107,7 @@
     </section>
 
 
-    <section class="skills" id="habilidades">
+    <section class="skills" id="skills">
 
         <div class="skills__itens__habilidades__container">
 
@@ -112,46 +119,49 @@
                         <button class="collapse-Soft-Skills">
                             <p class="pTitulo">Comunicação efetiva em equipe:</p> <span>+</span>
                         </button>
-                        <p class="textCollapse">Exemplos: Participação na criação de produtos na empresa Capim Limão
-                            Cosméticos,
-                            colaboração em projetos relevantes, supervisão da equipe de marketing na Capim Limão
-                            Cosméticos, e participação na criação de roteiro na sessão de fotos da artista e dançarina
-                            Sheila Mello.</p>
+                        <p class="textCollapse">O trabalho em equipe é fundamental para o conjunto de trabalho.
+                            Exemplos: Participação na criação de produtos na empresa Capim Limão Cosméticos, colaboração
+                            em projetos relevantes, supervisão da equipe de marketing na Capim Limão Cosméticos, e
+                            participação na criação de roteiro na sessão de fotos da artista e dançarina Sheila Mello.
+                        </p>
                     </div>
 
                     <div class="collapseContainer" id="resolucao">
                         <button class="collapse-Soft-Skills">
                             <p class="pTitulo">Resolução de problemas:</p> <span>+</span>
                         </button>
-                        <p class="textCollapse">Exemplos: Atuação ativa na resolução de problemas na BMC Comercial, e
-                            criação de soluções eficientes no desenvolvimento de sites responsivos.</p>
+                        <p class="textCollapse">Resolver problemas conforme surgem demonstra a dinamicidade do processo
+                            de trabalho. Exemplos: Atuação ativa na resolução de problemas na BMC Comercial, e criação
+                            de soluções eficientes no desenvolvimento de sites responsivos.</p>
                     </div>
 
                     <div class="collapseContainer" id="trabalhoEquipe">
                         <button class="collapse-Soft-Skills">
                             <p class="pTitulo">Trabalho em equipe sob pressão:</p> <span>+</span>
                         </button>
-                        <p class="textCollapse">Exemplos: Participação na sessão fotográfica da Sheila Mello,
-                            comunicação respeitosa em equipe sob pressão, e apresentação do projeto da porta automática
-                            na Feira Tecnológica da ETEC Zona Leste.</p>
+                        <p class="textCollapse">Trabalhar sob pressão é crucial para a entrega de um trabalho
+                            fundamental. Exemplos: Participação na sessão fotográfica da Sheila Mello, comunicação
+                            respeitosa em equipe sob pressão, e apresentação do projeto da porta automática na Feira
+                            Tecnológica da ETEC Zona Leste.</p>
                     </div>
 
                     <div class="collapseContainer" id="gestao">
                         <button class="collapse-Soft-Skills">
                             <p class="pTitulo">Gestão do tempo e comprometimento:</p> <span>+</span>
                         </button>
-                        <p class="textCollapse">Exemplos: Busca por oportunidades desafiadoras, movido por aprendizado
-                            contínuo, e participação em atividades extracurriculares como o curso WebMaster Front-End,
-                            Figma, Scrum e Planejamento Pessoal.</p>
+                        <p class="textCollapse">Garantir a entrega de projetos dentro de prazos determinados. Exemplos:
+                            Busca por oportunidades desafiadoras, movido por aprendizado contínuo, e participação em
+                            atividades extracurriculares como o curso WebMaster Front-End, Figma, Scrum e Planejamento
+                            Pessoal.</p>
                     </div>
 
                     <div class="collapseContainer" id="lideranca">
                         <button class="collapse-Soft-Skills">
                             <p class="pTitulo">Liderança e gestão de equipe:</p> <span>+</span>
                         </button>
-                        <p class="textCollapse">Exemplos: Gestão e liderança de equipe no projeto de E-commerce da
-                            Cafeteria Rocket Coffee, e organização de setor utilizando conhecimentos em SCRUM e Kanban
-                            na BMC Comercial.</p>
+                        <p class="textCollapse">Comprometimento e motivação para alcançar objetivos comuns. Exemplos:
+                            Gestão e liderança de equipe no projeto de E-commerce da Cafeteria Rocket Coffee, e
+                            organização de setor utilizando conhecimentos em SCRUM e Kanban na BMC Comercial.</p>
                     </div>
                 </div>
             </div>
@@ -198,7 +208,7 @@
 
 
 
-    <section id="about-me" class="about-me">
+    <section id="aboutMe" class="about-me">
 
         <h2 class="h3">Hello World, eu sou o Vitor...</h2>
         <p>Que tal nos conhercemos um pouco? </p>

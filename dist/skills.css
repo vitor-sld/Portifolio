@@ -44,7 +44,7 @@
   cursor: pointer;
 }
 .skills__itens__habilidades__container .habilidades-column-left .container .collapseContainer .collapse-Soft-Skills p {
-  font-size: 30px;
+  font-size: 22px;
   padding: 0 20px;
 }
 .skills__itens__habilidades__container .habilidades-column-left .container .collapseContainer .collapse-Soft-Skills span {
@@ -55,7 +55,7 @@
   transition: transform 0.3s ease;
 }
 .skills__itens__habilidades__container .habilidades-column-left .container .collapseContainer .textCollapse {
-  padding: 30px;
+  padding: 0 30px;
   font-size: 18px;
   font-weight: 400;
   color: beige;
@@ -122,6 +122,10 @@
 }
 .skills__itens__habilidades__container .habilidades-column-right .container h5:hover p {
   color: rgb(253, 204, 140);
+}
+.skills .collapseOpen {
+  height: auto !important;
+  padding: 0 0 50px;
 }
 
 @media (max-width: 1375px) {
@@ -324,6 +328,10 @@
   }
   .skills .habilidades-column-right .container h5 p {
     font-size: 11px !important;
+  }
+  .collapseOpen {
+    height: auto !important;
+    padding: 0 0 50px 0;
   }
 }
 
