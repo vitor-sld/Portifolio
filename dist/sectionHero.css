@@ -348,13 +348,13 @@
     padding-bottom: 10px;
   }
 }
-@media (max-height: 500px) {
+@media (max-height: 600px) {
   .hero {
     min-height: 500px;
     border: 1px solid white;
   }
   .hero__text-box__resume-about-me {
-    width: 60vw;
+    width: 50vw;
   }
   .hero__text-box__resume-about-me .p-resume-about-me {
     font-size: 1em;
@@ -363,21 +363,22 @@
   }
   .hero__img-box {
     height: 60vh;
-    width: 20vw;
+    width: 30vw;
     margin: auto;
     max-height: 90vh;
     max-width: 50vw;
     position: relative;
   }
   .hero__img-box__container {
-    width: 100%;
+    margin: auto;
+    width: 80%;
     height: 100%;
   }
   .hero__img-box__container .myself {
     top: 0;
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 300px;
+    width: 150px;
     width: inherit;
     z-index: 10;
   }
