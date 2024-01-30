@@ -300,7 +300,7 @@
     font-size: 20px;
     padding: 0 20px;
     transition: 1s;
-    transition: transform 0.3s ease;
+    transition: transform 0.8s ease;
   }
   .skills__itens__habilidades__container .habilidades-column-left .container .collapseContainer .textCollapse {
     padding: 14px;
@@ -330,7 +330,7 @@
     font-size: 11px !important;
   }
   .collapseOpen {
-    height: auto !important;
+    transform: translateY(25px);
     padding: 0 0 50px 0;
   }
 }
