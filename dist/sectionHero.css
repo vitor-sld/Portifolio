@@ -22,6 +22,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 100px 100px 100px;
+  overflow: scroll;
   border: 1px solid white;
 }
 .hero__text-box {
@@ -38,8 +39,11 @@
   color: white;
   margin: 20px 10px 30px;
 }
+.hero__text-box__resume-about-me {
+  max-height: 400px;
+}
 .hero__text-box__resume-about-me .p-resume-about-me {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 140%;
   color: white;
 }
@@ -300,6 +304,7 @@
 }
 @media (max-width: 500px) {
   .hero {
+    min-height: none;
     padding: 50px 0;
   }
   .hero__img-box {
@@ -333,10 +338,80 @@
     text-align: center;
     margin-bottom: 10px;
   }
+  .hero__text-box__resume-about-me {
+    min-height: 400px;
+  }
   .hero__text-box__resume-about-me .p-resume-about-me {
     text-align: center;
     font-size: 15px;
     line-height: 140%;
+    padding-bottom: 10px;
+  }
+}
+@media (max-height: 500px) {
+  .hero {
+    min-height: 500px;
+    border: 1px solid white;
+  }
+  .hero__text-box__resume-about-me {
+    width: 60vw;
+  }
+  .hero__text-box__resume-about-me .p-resume-about-me {
+    font-size: 1em;
+    line-height: 140%;
+    color: white;
+  }
+  .hero__img-box {
+    height: 70vh;
+    width: 40vw;
+    margin: auto;
+    max-height: 90vh;
+    max-width: 50vw;
+    position: relative;
+  }
+  .hero__img-box__container .myself {
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    width: inherit;
+    z-index: 10;
+  }
+  .hero__img-box__container .circle {
+    position: absolute;
+    bottom: -20px;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    z-index: 10;
+    animation: circleAnimation 20s linear infinite;
+  }
+  .hero__img-box__container .fitaSup {
+    position: absolute;
+    top: -50px;
+    right: calc(50% - 225px);
+    width: 150px;
+    height: 100px;
+    z-index: 11;
+  }
+  .hero__img-box__container .fitaInf {
+    display: none;
+    position: absolute;
+    bottom: -100px;
+    right: calc(40% - 100px);
+    width: 300px;
+    height: 200px;
+    z-index: 11;
+  }
+  .hero__img-box__container .elAbstract {
+    display: none;
+    animation: upDownAnimation 10s linear infinite;
+    position: absolute;
+    top: 100px;
+    left: -130px;
+    width: 200px;
+    height: 200px;
+    z-index: 8;
   }
 }
 
